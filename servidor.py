@@ -13,7 +13,6 @@ serverSocket.listen(1) # Começa a escutar por conexões (máximo de 1 na fila)
 while True:
     #Estabelece a conexão
     print('Ready to serve...')
-    # Esta é a linha que estava com erro (agora corrigida)
     connectionSocket, addr = serverSocket.accept() # Aceita a conexão do cliente
     
     try:
@@ -60,4 +59,5 @@ while True:
 
 
 serverSocket.close()
+
 sys.exit() # Encerra o programa
