@@ -25,7 +25,7 @@ while True:
             continue
             
         filename = message.split()[1]
-        f = open(filename[1:]) # Abre o arquivo requisitado (remove a barra '/')
+        f = open(filename[1:]) # Abre o arquivo requisitado
         
         outputdata = f.read() # Lê o conteúdo completo do arquivo
         
@@ -61,3 +61,4 @@ while True:
 serverSocket.close()
 
 sys.exit() # Encerra o programa
+
